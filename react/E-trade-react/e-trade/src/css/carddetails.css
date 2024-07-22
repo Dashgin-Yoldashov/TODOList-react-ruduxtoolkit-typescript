@@ -1,0 +1,45 @@
+.card-details-body{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 85vh;
+}
+.card-details{
+    display: flex;
+    border: solid;
+    width: 800px;
+    padding: 35px;
+    border-width: 1px;
+    border-color: rgba(0, 0, 0, 0.233);
+    border-radius: 15px;
+}
+img{
+    width: 250px;
+    height: 300px;
+    border-bottom: solid;
+    border-width: 1px;
+    padding: 20px 80px 30px 20px;
+    border-bottom-right-radius: 200px;
+    border-bottom-left-radius: 10px;
+    border-color: rgba(63, 63, 63, 0.329);
+    margin-right: 35px;
+    box-shadow: 0px 3px 2px 1px rgba(0, 0, 0, 0.1);
+}
+p{
+    width: 400px;
+    font-family:'Times New Roman', Times, serif;
+    opacity: 0.5;
+    letter-spacing: 1px;
+    font-weight: 100;
+}
+pre{
+    color: green;
+    font-weight: 900;
+    font-size: 23px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.stac{
+    margin-top: 100px;
+
+}
