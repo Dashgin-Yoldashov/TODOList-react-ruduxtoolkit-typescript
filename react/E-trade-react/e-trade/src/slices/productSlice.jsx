@@ -2,7 +2,8 @@ import { createAsyncThunk, createSlice } from '@reduxjs/toolkit'
 import axios from 'axios'
 
 const initialState = {
-    products: []
+    products: [],
+    selectedProduct: {}
 }
 const BASE_URL="https://fakestoreapi.com";
 
@@ -17,7 +18,9 @@ export const productSlice = createSlice({
     name: "product",
     initialState,
     reducers:{
-
+        setselectedProduct:(state,action)=>{
+            state.selectedProduct=action.payload;
+        }
     },
     extraReducers:(builder)=>{
         builder.addCase(getProduct.fulfilled,(state,action)=>{
@@ -26,5 +29,5 @@ export const productSlice = createSlice({
     }
 })
 
-export const{}=productSlice.actions
+export const{setselectedProduct}=productSlice.actions
 export default productSlice.reducer
